@@ -14,4 +14,8 @@
   overflow: hidden;
 ```
 
-### <pre>标签自动换行
+### pre标签自动换行
+```css
+  white-space: pre-wrap;
+  word-wrap: break-word;
+```
