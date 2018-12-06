@@ -95,7 +95,11 @@
   const list = [1,2,3];
   console.log(list.sort(function() { Math.random() - 0.5 })); // [2,1,3]
 ```
-
+10. 在vue的js中引入图片
+-需要使用require来进行引入才能显示图片
+```js
+  imgStr: require('../../sometLocation')
+```
 
 
 
