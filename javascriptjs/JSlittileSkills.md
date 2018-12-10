@@ -15,10 +15,11 @@
   // 只要 account.cash 的值大于 0 ，account.hasMoney 就将为 TRUE
 ```
 
-2. 使用 + 转换为数值
+2. 使用 + 或者 * 1来讲字符串 转换为数值
 ```js
   function toNumber(strNumber) {
     return +strNumber;
+    // return strNumber * 1;
   }
   console.log(toNumber("1234")); // 1234
   console.log(toNumber("ACB")); // NaN
@@ -100,6 +101,10 @@
 ```js
   imgStr: require('../../sometLocation')
 ```
-
-
+11. 原生JS添加类名 删除类名
+```js
+  document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass"); // 添加一个或者多个类，以逗号分隔
+  document.getElementById("myDIV").classList.remove("mystyle", "anotherClass", "thirdClass"); // 删除一个或者多个类，以逗号分隔
+  myDiv.classList.contains('myCssClass'); // 检查是否含有某个CSS类
+```
 
