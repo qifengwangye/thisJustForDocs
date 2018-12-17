@@ -19,3 +19,7 @@
   white-space: pre-wrap;
   word-wrap: break-word;
 ```
+### 首字母空两格
+```css
+  text-indent: 2em;
+```
