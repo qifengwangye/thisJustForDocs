@@ -108,3 +108,10 @@
   myDiv.classList.contains('myCssClass'); // 检查是否含有某个CSS类
 ```
 
+12. 在新窗口中打开页面
+```js
+  const a = document.createElement('a')
+  a.href = somePath
+  a.target = '_blank'
+  a.click()
+```
