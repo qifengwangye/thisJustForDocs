@@ -23,3 +23,20 @@
 ```css
   text-indent: 2em;
 ```
+### 内容垂直居中&水平居中
+```html
+  <div id="par">
+    <div id="child"></div>
+  </div>
+```
+```css
+  #par {
+    min-height: calc(100vh - 181px); // 高度自行修改
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  #par #child {
+    margin: 0 auto;
+  }
+```
