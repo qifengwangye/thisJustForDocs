@@ -13,7 +13,10 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
 ```
-
+### 英文自动换行
+```css
+  word-wrap:break-word
+```
 ### pre标签自动换行
 ```css
   white-space: pre-wrap;
