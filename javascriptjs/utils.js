@@ -427,3 +427,20 @@ export function IsURL (strUrl) {
   }
 }
 
+/**
+ * 删除object对象里面的目标参数
+ * @param {Obejct} aimObj 要删除字段数据的原Object
+ * @param {Array} objParam 要删除的字段名称数组 ['a', 'b']
+ * @returns {Object} returnObj 返回删除字段后的Object
+ */
+export function deleteParams (aimObj, objParam) {
+  let returnObj = {}
+  JSON.parse(JSON.stringify(aimObj))
+  Object.keys(aimObj).forEach((item, index) => {
+    if (_.includes(objParam, item) !== true) {
+      returnObj[item] = aimObj[item]
+    }
+  })
+  return returnObj
+}
+
