@@ -43,3 +43,37 @@
     margin: 0 auto;
   }
 ```
+
+### css禁用鼠标事件
+```css
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+  }
+```
+
+### 渐变实现linear-gradient
+```css
+  .stripe-bg{
+    padding: .5em;
+    line-height: 1.5em;
+    background: beige;
+    background-size: auto 3em;
+    background-origin: content-box;
+    background-image: linear-gradient(rgba(0,0,0,.2) 50%, transparent 0);
+  }
+```
+
+### css禁止用户选择
+```css
+  body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+```
+
